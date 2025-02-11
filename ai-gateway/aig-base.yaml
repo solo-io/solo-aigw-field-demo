@@ -67,6 +67,14 @@ spec:
             systemTime: '%START_TIME%'
             targetDuration: '%RESPONSE_DURATION%'
             upstreamName: '%UPSTREAM_CLUSTER%'
+            responseSize: '%BYTES_SENT%'
+            user: '%DYNAMIC_METADATA(envoy.filters.http.jwt_authn:principal:sub)%'
+            team: '%DYNAMIC_METADATA(envoy.filters.http.jwt_authn:principal:team)%'
+            org: '%DYNAMIC_METADATA(envoy.filters.http.jwt_authn:principal:org)%'
+            total_tokens: '%DYNAMIC_METADATA(ai.gloo.solo.io:total_tokens)%'
+            prompt_tokens: '%DYNAMIC_METADATA(ai.gloo.solo.io:prompt_tokens)%'
+            completion_tokens: '%DYNAMIC_METADATA(ai.gloo.solo.io:completion_tokens)%'
+            rate_limited_tokens: '%DYNAMIC_METADATA(envoy.ratelimit:hits_addend)%'
           path: /dev/stdout
   targetRefs:
   - group: gateway.networking.k8s.io
