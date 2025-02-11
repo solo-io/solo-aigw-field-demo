@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GLOO_VERSION="1.18.0-rc1"
+export GLOO_VERSION="1.18.4"
 
 # Use the GLOO_LICENSE_KEY environment variable if set, otherwise prompt the user
 if [[ -z "$GLOO_LICENSE_KEY" ]]; then
