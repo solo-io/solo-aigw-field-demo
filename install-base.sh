@@ -37,6 +37,9 @@ gloo:
       disabled: true
   discovery:
     enabled: false
+global:
+  securitySettings:
+    floatingUserId: true
 gloo-fed:
   enabled: false
   glooFedApiserver:
