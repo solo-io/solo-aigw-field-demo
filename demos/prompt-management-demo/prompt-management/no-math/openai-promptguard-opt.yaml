@@ -13,14 +13,14 @@ spec:
       promptEnrichment:
         append:
         # additionally translate in french
-        #- role: USER
+        #- role: user
         #  content: "Additionally, translate the response back in french"
         # additionally translate in chinese
-        #- role: USER
+        #- role: user
         #  content: "Additionally, translate the response back in chinese"
         # end with a motivational quote
-        #- role: USER
+        #- role: user
         #  content: "Additionally, end the response with a motivational quote."
         # system prompt: cannot do math equations
-        - role: SYSTEM
-          content: "If the request is a math problem, specifically return the words in the following: 'Unfortunately the organization that owns this chatbot does not allow me to do any math. Anything else on your mind?"       
+        - role: system
+          content: "If the request is a math problem, specifically return the words in the following: 'Unfortunately the organization that owns this chatbot does not allow me to do any math. Anything else on your mind?'"       
