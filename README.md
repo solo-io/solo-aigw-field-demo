@@ -1,3 +1,9 @@
+# Note on migration to solo-field-installer repo
+This repo still works as a standalone installer for Gloo AI Gateway with demos, but I have ported all of this work to [solo-field-installer](https://github.com/solo-io/solo-field-installer) to maintain everything in one place
+
+Here are the demos, in each README you will see instructions on how to set up the environment and run the demo
+[https://github.com/solo-io/solo-field-installer/tree/main/demos/ai-gateway](https://github.com/solo-io/solo-field-installer/tree/main/demos/ai-gateway)
+
 # Gloo AI Gateway Field Demo
 
 ![ai-gateway-main](images/ai-gateway-main.svg)
